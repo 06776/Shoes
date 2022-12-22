@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe-Animation - Hajdara Patrik</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Slab';
+        }
+
+        #divalap,
+        .cipok {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        .cipok {
+            position: absolute;
+            width: 600px;
+            height: 400px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .megveszem {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            overflow: hidden;
+            width: 250px;
+            height: 100px;
+        }
+
+        #box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #nike1 {
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            animation: cipo1 15s infinite;
+        }
+
+        #nike2 {
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            animation: cipo2 15s infinite;
+        }
+
+        #cim {
+            text-align: center;
+            background-color: black;
+            color: rgb(208, 255, 0);
+            margin: 0;
+            padding: 20px;
+            animation: cim 15s infinite;
+            font-weight: bolder;
+            letter-spacing: 3px;
+        }
+
+        #gomb {
+            text-align: center;
+            color: black;
+            background-color: rgb(208, 255, 0);
+            padding: 10px 0px 10px 0px;
+            margin: 0;
+            border: 0;
+            vertical-align: middle;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            font-size: xx-large;
+            animation: gomb 15s infinite;
+        }
+
+        @keyframes gomb {
+            0% {
+                margin-top: -500px;
+            }
+
+            80% {
+                margin-top: -500px;
+            }
+
+            85% {
+                margin-top: 0px;
+                color: black;
+                background-color: rgb(208, 255, 0);
+            }
+
+            88% {
+                margin-top: 0px;
+                color: rgb(208, 255, 0);
+                background-color: black;
+            }
+
+            91% {
+                margin-top: 0px;
+                color: black;
+                background-color: rgb(208, 255, 0);
+            }
+
+            94% {
+                margin-top: 0px;
+                color: rgb(208, 255, 0);
+                background-color: black;
+            }
+
+            100% {
+                margin-top: 0px;
+            }
+        }
+
+        @keyframes cim {
+            0% {
+                margin-top: -500px;
+                background-color: black;
+                color: rgb(208, 255, 0);
+            }
+
+            10% {
+                margin-top: -500px;
+                background-color: black;
+                color: rgb(208, 255, 0);
+            }
+
+            20% {
+                margin-top: 0px;
+                background-color: black;
+                color: rgb(208, 255, 0);
+            }
+
+            35% {
+                margin-top: 0px;
+                background-color: black;
+                color: rgb(208, 255, 0);
+            }
+
+            45% {
+                background-color: rgb(255, 0, 221);
+                color: white;
+                margin-top: 0px;
+            }
+
+            60% {
+                background-color: rgb(255, 0, 221);
+                color: white;
+                margin-top: 0px;
+            }
+
+            100% {
+                margin-top: -500px;
+            }
+        }
+
+        @keyframes cipo1 {
+            0% {
+                left: -3000px;
+            }
+
+            25% {
+                left: 0px;
+            }
+
+            50% {
+                left: 1500px;
+            }
+
+            100% {
+                left: 1500px;
+            }
+        }
+
+        @keyframes cipo2 {
+            0% {
+                left: -3000px;
+            }
+
+            25% {
+                left: -3000px;
+            }
+
+            50% {
+                left: 0px;
+            }
+
+            100% {
+                left: 1500px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="divalap">
+        <img src="./pics/bg-box.png" alt="box" id="box">
+        <div class="cipok">
+            <h1 id="cim">Nike Zoom Pegasus Turbo 2</h1>
+            <img src="./pics/nike2.png" alt="nike2" id="nike2">
+            <img src="./pics/nike1.png" alt="nike1" id="nike1">
+        </div>
+        <div class="megveszem">
+            <h1 id="gomb">Megveszem!</h1>
+        </div>
+    </div>
+</body>
+
+</html>
